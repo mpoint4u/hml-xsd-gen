@@ -3,6 +3,7 @@
 *.iml
 *.ipr
 src/*/bin/flash/*.swf
-*.lxproj
+*.lxsproj
 *.lxsopt
+*.bat
 
