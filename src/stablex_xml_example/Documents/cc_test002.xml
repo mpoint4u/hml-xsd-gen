@@ -4,5 +4,8 @@
 		xsi:schemaLocation="ru.stablex.ui.widgets ../schemas/ru.stablex.ui.widgets.xsd"
 		>
 
+	<Text autoHeight="true" autoWidth="false" text="'Hello folks ...'" />
+	<Text autoHeight="false" autoWidth="true" text="'Hello again'" />
+
 	
 </Widget>
