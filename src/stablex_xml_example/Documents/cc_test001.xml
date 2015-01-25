@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Widget skin:Paint-border="1" w="400" h="400" left="50" top="100">
-	<Text left="50" top="100" text="'My first widget!'" />
-</Widget>
+<stablex:Widget xmlns:stablex="ru.stablex.ui.widgets"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="ru.stablex.ui.widgets ../schemas/ru.stablex.ui.widgets.xsd"
+                >
+
+    <stablex:Text autoWidth="true"
+                  autoHeight="true"
+                  padding="5"
+                  childPadding="3" />
+	
+</stablex:Widget>
+
+
