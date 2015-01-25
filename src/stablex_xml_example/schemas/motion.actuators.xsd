@@ -1,13 +1,14 @@
-﻿<!-- Created with Liquid XML 2014 Designer Edition (Trial) 12.2.8.5459 (http://www.liquid-technologies.com) -->
-<xs:schema targetNamespace="motion.actuators"
-           xmlns="motion.actuators"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML 2014 Designer Edition (Trial) 12.2.8.5459 (http://www.liquid-technologies.com)-->
+<xs:schema xmlns="motion.actuators"
            xmlns:empty="empty"
-           xmlns:motion="motion">
-    <xs:import namespace="empty"
-               schemaLocation="empty.xsd" />
-    <xs:import namespace="motion"
-               schemaLocation="motion.xsd" />
+           xmlns:motion="motion"
+           targetNamespace="motion.actuators"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import schemaLocation="empty.xsd"
+               namespace="empty" />
+    <xs:import schemaLocation="motion.xsd"
+               namespace="motion" />
     <xs:complexType name="IGenericActuatorSchemaTypeValue">
         <xs:choice>
             <xs:element ref="GenericActuator" />
@@ -71,16 +72,14 @@
     <xs:complexType name="IGenericActuatorSchemaType">
         <xs:complexContent>
             <xs:extension base="empty:RootObjectTypeSchemaType">
-                <xs:sequence>
-                </xs:sequence>
+                <xs:sequence />
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="MotionPathActuatorSchemaType">
         <xs:complexContent>
             <xs:extension base="SimpleActuatorSchemaType">
-                <xs:sequence>
-                </xs:sequence>
+                <xs:sequence />
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -99,8 +98,7 @@
     <xs:complexType name="SimpleActuatorSchemaType">
         <xs:complexContent>
             <xs:extension base="GenericActuatorSchemaType">
-                <xs:sequence>
-                </xs:sequence>
+                <xs:sequence />
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -148,7 +146,7 @@
                 <xs:attribute name="duration"
                               type="xs:double" />
                 <xs:attribute name="id"
-                              type="xs:string" />
+                              type="xs:int" />
                 <xs:attribute name="properties"
                               type="xs:string" />
                 <xs:attribute name="target"
@@ -159,24 +157,21 @@
     <xs:complexType name="FilterActuatorSchemaType">
         <xs:complexContent>
             <xs:extension base="SimpleActuatorSchemaType">
-                <xs:sequence>
-                </xs:sequence>
+                <xs:sequence />
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="MethodActuatorSchemaType">
         <xs:complexContent>
             <xs:extension base="SimpleActuatorSchemaType">
-                <xs:sequence>
-                </xs:sequence>
+                <xs:sequence />
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="TransformActuatorSchemaType">
         <xs:complexContent>
             <xs:extension base="SimpleActuatorSchemaType">
-                <xs:sequence>
-                </xs:sequence>
+                <xs:sequence />
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>

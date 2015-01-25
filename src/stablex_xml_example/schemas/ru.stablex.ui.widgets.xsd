@@ -1,19 +1,20 @@
-﻿<!-- Created with Liquid XML 2014 Designer Edition (Trial) 12.2.8.5459 (http://www.liquid-technologies.com) -->
-<xs:schema targetNamespace="ru.stablex.ui.widgets"
-           xmlns="ru.stablex.ui.widgets"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML 2014 Designer Edition (Trial) 12.2.8.5459 (http://www.liquid-technologies.com)-->
+<xs:schema xmlns="ru.stablex.ui.widgets"
            xmlns:flash-text="flash.text"
-           xmlns:ru-stablex="ru.stablex"
            xmlns:ru-stablex-ui-skins="ru.stablex.ui.skins"
-           xmlns:ru-stablex-ui-layouts="ru.stablex.ui.layouts">
-    <xs:import namespace="flash.text"
-               schemaLocation="flash.text.xsd" />
-    <xs:import namespace="ru.stablex"
-               schemaLocation="ru.stablex.xsd" />
-    <xs:import namespace="ru.stablex.ui.skins"
-               schemaLocation="ru.stablex.ui.skins.xsd" />
-    <xs:import namespace="ru.stablex.ui.layouts"
-               schemaLocation="ru.stablex.ui.layouts.xsd" />
+           xmlns:ru-stablex-ui-layouts="ru.stablex.ui.layouts"
+           xmlns:ru-stablex="ru.stablex"
+           targetNamespace="ru.stablex.ui.widgets"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import schemaLocation="flash.text.xsd"
+               namespace="flash.text" />
+    <xs:import schemaLocation="ru.stablex.xsd"
+               namespace="ru.stablex" />
+    <xs:import schemaLocation="ru.stablex.ui.skins.xsd"
+               namespace="ru.stablex.ui.skins" />
+    <xs:import schemaLocation="ru.stablex.ui.layouts.xsd"
+               namespace="ru.stablex.ui.layouts" />
     <xs:complexType name="TextSchemaTypeValue">
         <xs:sequence>
             <xs:element ref="Text" />
@@ -191,7 +192,7 @@
                 <xs:attribute name="heightPt"
                               type="xs:double" />
                 <xs:attribute name="id"
-                              type="xs:string" />
+                              type="xs:int" />
                 <xs:attribute name="left"
                               type="xs:double" />
                 <xs:attribute name="leftPt"
