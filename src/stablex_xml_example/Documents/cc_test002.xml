@@ -4,8 +4,10 @@
 		xsi:schemaLocation="ru.stablex.ui.widgets ../schemas/ru.stablex.ui.widgets.xsd"
 		>
 
-	<Text autoHeight="true" autoWidth="false" text="'Hello folks ...'" />
-	<Text autoHeight="false" autoWidth="true" text="'Hello again'" />
+	<VBox widthPt="80" padding="10" childPadding="20">
+		<Text autoHeight="true" autoWidth="false" text="'Hello folks ...'" />
+		<Text autoHeight="false" autoWidth="true" text="'Hello again'" />
+	</VBox>
 
-	
+
 </Widget>
