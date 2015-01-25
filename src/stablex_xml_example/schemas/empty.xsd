@@ -393,7 +393,9 @@
         </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="RootObjectTypeSchemaType">
-        <xs:any minOccurs="0" />
+        <xs:choice>
+            <xs:any minOccurs="0" />           
+		</xs:choice>
         <xs:attribute name="id"
                       type="xs:int" />
     </xs:complexType>
