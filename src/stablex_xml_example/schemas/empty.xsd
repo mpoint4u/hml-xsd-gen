@@ -306,7 +306,7 @@
             <xs:element ref="flash-system:SecurityDomain" />
             <xs:element ref="motion-easing:QuintEaseInOut" />
             <xs:element ref="flash-events:MouseEvent" />
-            <xs:element ref="RootObjectType" />
+            
         </xs:choice>
     </xs:complexType>
     <xs:complexType name="ReflectSchemaTypeValue">
@@ -394,8 +394,8 @@
     </xs:complexType>
     <xs:complexType name="RootObjectTypeSchemaType">
         <xs:choice>
-            <xs:any minOccurs="0" />           
-		</xs:choice>
+           <xs:any minOccurs="1" />  
+		</xs:choice>         
         <xs:attribute name="id"
                       type="xs:int" />
     </xs:complexType>
