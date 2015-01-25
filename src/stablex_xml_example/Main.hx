@@ -13,6 +13,7 @@ class Main extends Sprite{
     UIBuilder.init();
     // Congratulations! You can use StablexUI!
     flash.Lib.current.addChild( UIBuilder.buildFn('first.xml')() );
+    //flash.Lib.current.addChild(UIBuilder.buildFn('Documents/cc_test003.xml')() );
 
     }
 }
