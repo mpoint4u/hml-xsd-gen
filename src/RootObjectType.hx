@@ -16,10 +16,13 @@ class RootObjectType extends SchemaType {
     }
 
     override public function toComplexTypeXmlString(namespace:SchemaNamespace): String {
+        trace("called toComplexTypeXmlString() with namespace:" + namespace.name);
         var buf: StringBuf = new StringBuf();
         buf.add('<xs:complexType name="RootObjectTypeSchemaType">');
         if (!Generator.onlyExplicitChildren) {
-            buf.add('<xs:any minOccurs="0"/>');
+            buf.add('<xs:choice>');
+            buf.add('<xs:any minOccurs="1"/>');
+            buf.add('</xs:choice>');
         }
         buf.add('<xs:attribute name="id" type="xs:int"/>\n</xs:complexType>');
         return buf.toString();
