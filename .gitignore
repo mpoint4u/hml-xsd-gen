@@ -3,7 +3,9 @@
 *.iml
 *.ipr
 src/*/bin/flash/*.swf
+src/stablex_xml_example/schemas/tmp*.xsd
 *.lxsproj
 *.lxsopt
 *.bat
-
+*.sad
+*.spp
