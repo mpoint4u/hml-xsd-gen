@@ -6,5 +6,9 @@
 
 	<Text text="Hi everybody" widthPt="90" height="50" align="left" />
 
+	<Text text="..what's up? " width="250" height="50" align="right" />
+
+	
+
 
 </Widget>
