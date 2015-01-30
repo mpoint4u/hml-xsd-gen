@@ -10,3 +10,4 @@ src/stablex_xml_example/schemas/tmp*.xsd
 *.sad
 *.spp
 *.xpr
+*.layout
