@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Widget xmlns="ru.stablex.ui.widgets"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="ru.stablex.ui.widgets ../schemas/ru.stablex.ui.widgets.xsd"
+		xsi:schemaLocation="ru.stablex.ui.widgets ../schemas/empty.xsd"
 		>
-
-	<Text text="Hi everybody" widthPt="90" height="50" align="left" />
-
-	<Text text="..what's up? " width="250" height="50" align="right" />
-
-	
-
 
 </Widget>
