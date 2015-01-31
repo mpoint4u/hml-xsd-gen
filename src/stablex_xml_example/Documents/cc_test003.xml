@@ -6,9 +6,15 @@
 
 	<Text text="Hi everybody" widthPt="90" height="50" align="left" />
 
-	<Text text="..what's up? " width="250" height="50" align="right" />
 
-	<Widget heightPt="90" widthPt="90" top="100" left="100" />
+
+	<Box heightPt="90" widthPt="90" top="100" left="100">
+
+		<Text text="..what's up? " width="250" height="50" align="right" />
+
+	</Box>
+	
+	<Widget left="20" top="20" right="20" bottom="20" alpha=".5" />
 
 	
 
