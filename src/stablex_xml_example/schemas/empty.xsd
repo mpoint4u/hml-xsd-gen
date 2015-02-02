@@ -1,4 +1,4 @@
-<xs:schema targetNamespace="empty" xmlns="empty" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+﻿<xs:schema targetNamespace="empty" xmlns="empty" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:motion-actuators="motion.actuators" xmlns:flash-ui="flash.ui"
     xmlns:ru-stablex-ui-skins="ru.stablex.ui.skins" xmlns:flash="flash"
     xmlns:flash-display3D-textures="flash.display3D.textures"
@@ -352,9 +352,8 @@
 
     <xs:complexType name="RootObjectTypeSchemaType">
         <xs:all>
-            <xs:any minOccurs="1" />
-        </xs:all>
-
+            
+		</xs:all>
 
     </xs:complexType>
     <xs:complexType name="ReflectSchemaType">
