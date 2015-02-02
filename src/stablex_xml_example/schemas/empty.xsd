@@ -351,9 +351,10 @@
     </xs:complexType>
 
     <xs:complexType name="RootObjectTypeSchemaType">
-        <xs:choice>
-            <xs:any minOccurs="1"/>
-        </xs:choice>
+        <xs:all>
+            <xs:any minOccurs="1" />
+        </xs:all>
+
 
     </xs:complexType>
     <xs:complexType name="ReflectSchemaType">

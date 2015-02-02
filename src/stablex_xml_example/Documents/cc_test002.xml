@@ -9,5 +9,10 @@
 		<Text autoHeight="false" autoWidth="true" text="'Hello again'" />
 	</VBox>
 
+    <VBox>
+        <Text autoHeight="true" autoWidth="false" text="'something....'" />
+        <Text paddingBottom="10" />
+    </VBox>
+
 
 </Widget>
