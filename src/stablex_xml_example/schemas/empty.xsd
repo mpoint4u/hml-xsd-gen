@@ -386,8 +386,10 @@
 
     <!-- the all important definition of RootObjectTypes -->
     <xs:complexType name="RootObjectTypeSchemaType">
-        <xs:any>
-            <xs:element ref="RootWildCard" />           
+        <xs:choice>
+            <xs:any minOccurs="1" maxOccurs="1" />
+            
+            <!--<xs:element ref="RootWildCard" /> -->          
             <!--<xs:element ref="RootObjectType"  />-->
             <!--<xs:element ref="RootToBeSubstituted" minOccurs="1" maxOccurs="1"  />-->
              
@@ -396,7 +398,7 @@
                     <xs:field xpath=""></xs:field>
                 </xs:key>-->           
                          
-        </xs:any>  
+        </xs:choice>  
     </xs:complexType> 
     
     <!-- start element declaration -->

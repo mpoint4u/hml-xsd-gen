@@ -19,7 +19,15 @@
 	<HBox bottomPt="" align="left" alpha=".5">
 
 		<Text text="works so far ... " />
-		
+
+	</HBox>
+
+	<HBox bottomPt="11" topPt="12" leftPt="13" rightPt="14">
+
+		<VBox>
+			<Text text="end for this evening" />
+		</VBox>
+
 	</HBox>
 
 
