@@ -1,4 +1,4 @@
-<xs:schema targetNamespace="empty" xmlns="empty" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+﻿<xs:schema targetNamespace="empty" xmlns="empty" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:motion-actuators="motion.actuators" xmlns:flash-ui="flash.ui"
     xmlns:ru-stablex-ui-skins="ru.stablex.ui.skins" xmlns:flash="flash"
     xmlns:flash-display3D-textures="flash.display3D.textures"
@@ -45,6 +45,9 @@
     <xs:import namespace="flash.xml" schemaLocation="flash.xml.xsd"/>
     <xs:import namespace="flash.events" schemaLocation="flash.events.xsd"/>
     <xs:import namespace="flash.accessibility" schemaLocation="flash.accessibility.xsd"/>
+    
+    <!-- start definitions -->
+    
     <xs:complexType name="ArraySchemaTypeValue">
         <xs:sequence>
             <xs:element ref="Array"/>
@@ -263,7 +266,7 @@
             <xs:element ref="flash-system:SecurityDomain"/>
             <xs:element ref="motion-easing:QuintEaseInOut"/>
             <xs:element ref="flash-events:MouseEvent"/>
-
+            <xs:element ref="RootObjectType" />
         </xs:choice>
     </xs:complexType>
 
@@ -352,7 +355,9 @@
 
     <xs:complexType name="RootObjectTypeSchemaType">
         <xs:all>
-            <xs:any minOccurs="1" />
+            <xs:element>
+                
+            </xs:element>
         </xs:all>
 
 
@@ -381,7 +386,7 @@
         </xs:complexContent>
     </xs:complexType>
 
-
+    <xs:element name="RootObjectType" type="xs:anyType" />
     <xs:element name="Array" type="ArraySchemaType"/>
     <xs:element name="ArrayAccess" type="ArrayAccessSchemaType"/>
     <xs:element name="String" type="StringSchemaType"/>
