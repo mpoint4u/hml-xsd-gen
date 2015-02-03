@@ -16,11 +16,11 @@
 	
 	<Widget left="20" top="20" right="20" bottom="20" alpha=".5" />
 
-    <Widget leftPt="20" topPt="20" rightPt="20" bottomPt="20" alpha=".5" />
+	<HBox bottomPt="" align="left" alpha=".5">
 
-	<Widget rightPt="11" leftPt="11" topPt="11" bottomPt="11" />
-
-	<Widget rightPt="22" leftPt="11" topPt="33" bottomPt="44" />
+		<Text text="works so far ... " />
+		
+	</HBox>
 
 
 
