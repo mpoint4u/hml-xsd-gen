@@ -376,25 +376,34 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    
+    <!-- try to get the xs:any definition on board as well  -->
+    <xs:complexType name="RootAnyType">
+        <xs:choice>
+            <xs:any minOccurs="0" maxOccurs="1"/>  
+        </xs:choice>
+    </xs:complexType>
 
     <!-- the all important definition of RootObjectTypes -->
     <xs:complexType name="RootObjectTypeSchemaType">
-        <xs:choice>
-            <xs:element ref="RootElements" />           
-            <!-- <xs:any /> -->
-            <!-- 
-                 <xs:key name="id">
+        <xs:any>
+            <xs:element ref="RootWildCard" />           
+            <!--<xs:element ref="RootObjectType"  />-->
+            <!--<xs:element ref="RootToBeSubstituted" minOccurs="1" maxOccurs="1"  />-->
+             
+                <!-- <xs:key name="id">
                     <xs:selector xpath=""></xs:selector>
                     <xs:field xpath=""></xs:field>
-                </xs:key>           
-            -->  
-            
-        </xs:choice>  
+                </xs:key>-->           
+                         
+        </xs:any>  
     </xs:complexType> 
     
     <!-- start element declaration -->
-    <xs:element name="RootObjectType" type="xs:anyType" />
-    <xs:element name="RootElements" type="RootObjectTypeSchemaType" substitutionGroup="RootObjectType" />
+    <xs:element name="RootToBeSubstituted" />   <!-- which is inherently of type="xs:anyType" -->
+    <xs:element name="RootWildCard" type="RootAnyType" substitutionGroup="RootToBeSubstituted" /> 
+    <xs:element name="RootObjectType" type="RootObjectTypeSchemaType" /> <!-- substitutionGroup="RootToBeSubstituted"   -->
+  
     <xs:element name="Array" type="ArraySchemaType"/>
     <xs:element name="ArrayAccess" type="ArrayAccessSchemaType"/>
     <xs:element name="String" type="StringSchemaType"/>

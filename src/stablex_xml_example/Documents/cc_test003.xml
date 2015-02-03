@@ -20,4 +20,8 @@
 
 	<Widget rightPt="11" leftPt="11" topPt="11" bottomPt="11" />
 
+	<Widget rightPt="22" leftPt="11" topPt="33" bottomPt="44" />
+
+
+
 </Widget>
