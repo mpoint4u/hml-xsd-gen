@@ -380,8 +380,8 @@
     <!-- the all important definition of RootObjectTypes -->
     <xs:complexType name="RootObjectTypeSchemaType">
         <xs:choice>
-            <!-- <xs:element> -->            
-            <xs:any />
+            <xs:element ref="RootElements" />           
+            <!-- <xs:any /> -->
             <!-- 
                  <xs:key name="id">
                     <xs:selector xpath=""></xs:selector>

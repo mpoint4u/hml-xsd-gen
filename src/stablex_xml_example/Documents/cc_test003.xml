@@ -18,4 +18,6 @@
 
     <Widget leftPt="20" topPt="20" rightPt="20" bottomPt="20" alpha=".5" />
 
+	<Widget rightPt="11" leftPt="11" topPt="11" bottomPt="11" />
+
 </Widget>
