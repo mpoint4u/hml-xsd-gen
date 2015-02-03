@@ -381,9 +381,7 @@
     <xs:complexType name="RootObjectTypeSchemaType">
         <xs:choice>
             <!-- <xs:element> -->            
-            <xs:any>
-                
-            </xs:any>
+            <xs:any />
             <!-- 
                  <xs:key name="id">
                     <xs:selector xpath=""></xs:selector>
