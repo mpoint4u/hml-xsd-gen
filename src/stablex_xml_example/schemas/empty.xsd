@@ -353,15 +353,6 @@
         </xs:complexContent>
     </xs:complexType>
 
-    <xs:complexType name="RootObjectTypeSchemaType">
-        <xs:all>
-            <xs:element>
-                
-            </xs:element>
-        </xs:all>
-
-
-    </xs:complexType>
     <xs:complexType name="ReflectSchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
@@ -386,7 +377,26 @@
         </xs:complexContent>
     </xs:complexType>
 
+    <!-- the all important definition of RootObjectTypes -->
+    <xs:complexType name="RootObjectTypeSchemaType">
+        <xs:choice>
+            <!-- <xs:element> -->            
+            <xs:any>
+                
+            </xs:any>
+            <!-- 
+                 <xs:key name="id">
+                    <xs:selector xpath=""></xs:selector>
+                    <xs:field xpath=""></xs:field>
+                </xs:key>           
+            -->  
+            
+        </xs:choice>  
+    </xs:complexType> 
+    
+    <!-- start element declaration -->
     <xs:element name="RootObjectType" type="xs:anyType" />
+    <xs:element name="RootElements" type="RootObjectTypeSchemaType" substitutionGroup="RootObjectType" />
     <xs:element name="Array" type="ArraySchemaType"/>
     <xs:element name="ArrayAccess" type="ArrayAccessSchemaType"/>
     <xs:element name="String" type="StringSchemaType"/>
