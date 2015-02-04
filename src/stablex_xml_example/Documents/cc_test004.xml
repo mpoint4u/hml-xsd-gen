@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Widget xmlns="ru.stablex.ui.widgets" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="ru.stablex.ui.widgets ../schemas/ru.stablex.ui.widgets.xsd">
+	
+	<Box height="100" width="200" alpha=".5" padding="15">
+		<Text text="'some text'" />
+	</Box>
+</Widget>

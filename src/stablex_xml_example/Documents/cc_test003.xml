@@ -14,7 +14,7 @@
 
 	</Box>
 	
-	<Widget left="20" top="20" right="20" bottom="20" alpha=".5" />
+	<Widget left="20" top="40" right="20" bottom="20" alpha=".75"  visible="true" overflow="false"/>
 
 	<HBox bottomPt="" align="left" alpha=".5">
 
@@ -29,6 +29,10 @@
 		</VBox>
 
 	</HBox>
+
+	<Widget topPt="10" bottomPt="10" leftPt="20" rightPt="20">
+		<Text text="'hello'" autoHeight="true"  defaults="" padding="5" />
+	</Widget>
 
 
 
