@@ -1,4 +1,4 @@
-﻿<xs:schema targetNamespace="empty" xmlns="empty" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema targetNamespace="empty" xmlns="empty" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:motion-actuators="motion.actuators" xmlns:flash-ui="flash.ui"
     xmlns:ru-stablex-ui-skins="ru.stablex.ui.skins" xmlns:flash="flash"
     xmlns:flash-display3D-textures="flash.display3D.textures"
@@ -387,7 +387,7 @@
     <!-- the all important definition of RootObjectTypes -->
     <xs:complexType name="RootObjectTypeSchemaType">
         <xs:choice>
-            <xs:any minOccurs="1" maxOccurs="1" />
+            <xs:any id="RootJoker" maxOccurs="1" minOccurs="1" namespace="##targetNamespace" processContents="strict" />
             
             <!--<xs:element ref="RootWildCard" /> -->          
             <!--<xs:element ref="RootObjectType"  />-->
