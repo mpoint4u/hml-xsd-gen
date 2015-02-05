@@ -21,7 +21,7 @@ class RootObjectType extends SchemaType {
         buf.add('<xs:complexType name="RootObjectTypeSchemaType">');
         if (!Generator.onlyExplicitChildren) {
             buf.add('<xs:choice>');
-            buf.add('<xs:any minOccurs="1"/>');
+            buf.add('<xs:any namespace="##targetNamespace" processContents="lax"  minOccurs="1"/>');
             buf.add('</xs:choice>');
         }
         buf.add('<xs:attribute name="id" type="xs:int"/>\n</xs:complexType>');

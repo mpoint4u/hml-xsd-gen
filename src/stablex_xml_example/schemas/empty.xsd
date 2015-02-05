@@ -370,7 +370,7 @@
     <!-- the all important definition of RootObjectTypes -->
     <xs:complexType name="RootObjectTypeSchemaType">
         <xs:choice>
-            <xs:any id="RootJoker" namespace="##targetNamespace" processContents="lax"  minOccurs="1"/>
+            <xs:any namespace="##targetNamespace" processContents="lax"  minOccurs="1" />
         </xs:choice>
     </xs:complexType>
     <!-- start element declaration -->
