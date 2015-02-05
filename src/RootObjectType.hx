@@ -20,11 +20,12 @@ class RootObjectType extends SchemaType {
         var buf: StringBuf = new StringBuf();
         buf.add('<xs:complexType name="RootObjectTypeSchemaType">');
         if (!Generator.onlyExplicitChildren) {
-            buf.add('<xs:choice>');
-            buf.add('<xs:any namespace="##targetNamespace" processContents="lax"  minOccurs="1"/>');
-            buf.add('</xs:choice>');
+            buf.add('<xs:choice>\n');
+            buf.add('<xs:any namespace="##targetNamespace" processContents="lax"  minOccurs="1"/>\n');
+            buf.add('</xs:choice>\n');
         }
-        buf.add('<xs:attribute name="id" type="xs:int"/>\n</xs:complexType>');
+        //buf.add('<xs:attribute name="id" type="xs:int"/>\n</xs:complexType>');
+        buf.add('</xs:complexType>');
         return buf.toString();
     }
 
