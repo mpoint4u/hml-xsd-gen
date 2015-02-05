@@ -3,6 +3,11 @@
 *.iml
 *.ipr
 src/*/bin/flash/*.swf
-*.lxproj
+src/stablex_xml_example/schemas/tmp*.xsd
+*.lxsproj
 *.lxsopt
-
+*.bat
+*.sad
+*.spp
+*.xpr
+*.layout
