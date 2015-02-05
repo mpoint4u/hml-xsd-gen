@@ -45,52 +45,43 @@
     <xs:import namespace="flash.xml" schemaLocation="flash.xml.xsd"/>
     <xs:import namespace="flash.events" schemaLocation="flash.events.xsd"/>
     <xs:import namespace="flash.accessibility" schemaLocation="flash.accessibility.xsd"/>
-    
     <!-- start definitions -->
-    
     <xs:complexType name="ArraySchemaTypeValue">
         <xs:sequence>
             <xs:element ref="Array"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="ArrayAccessSchemaTypeValue">
         <xs:sequence>
             <xs:element ref="ArrayAccess"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="StringSchemaTypeValue">
         <xs:sequence>
             <xs:element ref="String"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="StdSchemaTypeValue">
         <xs:sequence>
             <xs:element ref="Std"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="TypeSchemaTypeValue">
         <xs:sequence>
             <xs:element ref="Type"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="IMapSchemaTypeValue">
         <xs:choice>
             <xs:element ref="haxe-ds:StringMap"/>
             <xs:element ref="haxe-ds:ObjectMap"/>
         </xs:choice>
     </xs:complexType>
-
     <xs:complexType name="ListSchemaTypeValue">
         <xs:sequence>
             <xs:element ref="List"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="RootObjectTypeSchemaTypeValue">
         <xs:choice>
             <xs:element ref="motion-actuators:IGenericActuator"/>
@@ -269,25 +260,21 @@
             <xs:element ref="RootObjectType" />
         </xs:choice>
     </xs:complexType>
-
     <xs:complexType name="ReflectSchemaTypeValue">
         <xs:sequence>
             <xs:element ref="Reflect"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="MathSchemaTypeValue">
         <xs:sequence>
             <xs:element ref="Math"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="MainSchemaTypeValue">
         <xs:sequence>
             <xs:element ref="Main"/>
         </xs:sequence>
     </xs:complexType>
-
     <xs:complexType name="ArraySchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
@@ -298,15 +285,14 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:complexType name="ArrayAccessSchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
-                <xs:sequence> </xs:sequence>
+                <xs:sequence>
+                </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:complexType name="StringSchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
@@ -317,31 +303,30 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:complexType name="StdSchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
-                <xs:sequence> </xs:sequence>
+                <xs:sequence>
+                </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:complexType name="TypeSchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
-                <xs:sequence> </xs:sequence>
+                <xs:sequence>
+                </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:complexType name="IMapSchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
-                <xs:sequence> </xs:sequence>
+                <xs:sequence>
+                </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:complexType name="ListSchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
@@ -352,60 +337,48 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:complexType name="ReflectSchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
-                <xs:sequence> </xs:sequence>
+                <xs:sequence>
+                </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:complexType name="MathSchemaType">
         <xs:complexContent>
             <xs:extension base="RootObjectTypeSchemaType">
-                <xs:sequence> </xs:sequence>
+                <xs:sequence>
+                </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-
     <xs:complexType name="MainSchemaType">
         <xs:complexContent>
             <xs:extension base="flash-display:SpriteSchemaType">
-                <xs:sequence> </xs:sequence>
+                <xs:sequence>
+                </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    
     <!-- try to get the xs:any definition on board as well  -->
     <xs:complexType name="RootAnyType">
         <xs:choice>
-            <xs:any minOccurs="0" maxOccurs="1"/>  
+            <xs:any minOccurs="0" maxOccurs="1"/>
         </xs:choice>
     </xs:complexType>
-
     <!-- the all important definition of RootObjectTypes -->
     <xs:complexType name="RootObjectTypeSchemaType">
         <xs:choice>
-            <xs:any id="RootJoker"  namespace="##targetNamespace" processContents="strict" />
-            
-            <!--<xs:element ref="RootWildCard" /> -->          
-            <!--<xs:element ref="RootObjectType"  />-->
-            <!--<xs:element ref="RootToBeSubstituted" minOccurs="1" maxOccurs="1"  />-->
-             
-                <!-- <xs:key name="id">
-                    <xs:selector xpath=""></xs:selector>
-                    <xs:field xpath=""></xs:field>
-                </xs:key>-->           
-                         
-        </xs:choice>  
-    </xs:complexType> 
-    
+            <xs:any id="RootJoker" namespace="##targetNamespace" processContents="strict" />
+        </xs:choice>
+    </xs:complexType>
     <!-- start element declaration -->
-    <xs:element name="RootToBeSubstituted" />   <!-- which is inherently of type="xs:anyType" -->
-    <xs:element name="RootWildCard" type="RootAnyType" substitutionGroup="RootToBeSubstituted" /> 
-    <xs:element name="RootObjectType" type="RootObjectTypeSchemaType" /> <!-- substitutionGroup="RootToBeSubstituted"   -->
-  
+    <xs:element name="RootToBeSubstituted" />
+    <!-- which is inherently of type="xs:anyType" -->
+    <xs:element name="RootWildCard" type="RootAnyType" substitutionGroup="RootToBeSubstituted" />
+    <xs:element name="RootObjectType" type="RootObjectTypeSchemaType" />
+    <!-- substitutionGroup="RootToBeSubstituted"   -->
     <xs:element name="Array" type="ArraySchemaType"/>
     <xs:element name="ArrayAccess" type="ArrayAccessSchemaType"/>
     <xs:element name="String" type="StringSchemaType"/>
