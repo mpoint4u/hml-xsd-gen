@@ -8,9 +8,9 @@
 	</Box>
 	
 	<Widget name="qqq" alpha=".5" widthPt="90" heightPt="90" >
-		<Box padding="10" childPadding="10" >
+		<HBox padding="10" childPadding="10" >
 			<Text text="'some text'" format="" />
-		</Box>
+		</HBox>
 		<Box >
 			<Text text="'bla bla'" />
 		</Box>

@@ -7,6 +7,7 @@
 	<VBox widthPt="80" padding="10" childPadding="20">
 		<Text autoHeight="true" autoWidth="false" text="'Hello folks ...'" />
 		<Text autoHeight="false" autoWidth="true" text="'Hello again'" />
+		<Text autoHeight="true" autoWidth="false" text="'Hi Maxx'" />
 	</VBox>
 
     <VBox>
