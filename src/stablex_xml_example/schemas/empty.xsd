@@ -387,7 +387,7 @@
     <!-- the all important definition of RootObjectTypes -->
     <xs:complexType name="RootObjectTypeSchemaType">
         <xs:choice>
-            <xs:any id="RootJoker" maxOccurs="1" minOccurs="1" namespace="##targetNamespace" processContents="strict" />
+            <xs:any id="RootJoker"  namespace="##targetNamespace" processContents="strict" />
             
             <!--<xs:element ref="RootWildCard" /> -->          
             <!--<xs:element ref="RootObjectType"  />-->
