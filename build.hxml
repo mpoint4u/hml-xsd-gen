@@ -2,3 +2,4 @@
 -lib hxargs
 -cp src
 -main Generator
+-debug
