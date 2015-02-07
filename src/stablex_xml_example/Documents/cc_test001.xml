@@ -4,7 +4,7 @@
                 xsi:schemaLocation="ru.stablex.ui.widgets ../schemas/ru.stablex.ui.widgets.xsd"
                 >
     
-    <Box alpha=".5"
+    <Widget alpha=".5"
          height="100"
          width="200" />
     

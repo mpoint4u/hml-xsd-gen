@@ -3,36 +3,14 @@
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="ru.stablex.ui.widgets ../schemas/ru.stablex.ui.widgets.xsd"
 		>
+	<VBox bottomPt="30" align="left" alpha=".5">
+		<Text text="'Hi everybody'" widthPt="90" height="50" align="left" />
+		<Text text="'code completion works so far ... '" />
+	</VBox>
 
-	<Text text="Hi everybody" widthPt="90" height="50" align="left" />
-
-
-
-	<Box heightPt="90" widthPt="90" top="100" left="100">
-
-		<Text text="..what's up? " width="250" height="50" align="right" />
-
-	</Box>
-	
-	<Widget left="20" top="40" right="20" bottom="20" alpha=".75"  visible="true" overflow="false"/>
-
-	<HBox bottomPt="" align="left" alpha=".5">
-
-		<Text text="works so far ... " />
-
+	<HBox topPt="10" bottomPt="10" leftPt="20" rightPt="20">
+		<Text text="'this is good news'" autoHeight="true" padding="5" />
 	</HBox>
-
-	<HBox bottomPt="11" topPt="12" leftPt="13" rightPt="14">
-
-		<VBox>
-			<Text text="end for this evening" />
-		</VBox>
-
-	</HBox>
-
-	<Widget topPt="10" bottomPt="10" leftPt="20" rightPt="20">
-		<Text text="'hello'" autoHeight="true"  defaults="" padding="5" />
-	</Widget>
 
 
 

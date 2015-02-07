@@ -5,21 +5,16 @@
 		>
 
 	<VBox widthPt="80" padding="10" childPadding="20">
-		<Text autoHeight="true" autoWidth="false" text="'Hello folks ...'" />
-		<Text autoHeight="false" autoWidth="true" text="'Hello again'" />
-		<Text autoHeight="true" autoWidth="false" text="'Hi Maxx'" />
+		<Text autoHeight="true" text="'Hello folks ...'" />
+		<Text autoHeight="true" text="'this are some test widgets'" />
+		<Text autoHeight="true" text="'for demonstrating the use of '" />
+		<Text autoHeight="true" text="'StablexUI / and later HML tags '" />
+		<Text autoHeight="true" text="'for XML-driven UI-development...'" />
 	</VBox>
 
     <VBox>
-        <Text autoHeight="true" autoWidth="false" text="'something....'" />
-        <Text paddingBottom="10" />
+        <Text autoHeight="true" text="'something....'" />
+        <Text paddingBottom="10" text="'to remember ...'" />
     </VBox>
-
-	<Box paddingTop="10" >
-		<Text text="bla bla" />
-	</Box>
-
-
-
 
 </Widget>
