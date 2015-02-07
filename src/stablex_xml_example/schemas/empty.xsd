@@ -381,6 +381,12 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+	
+	<!-- start element declaration -->
+	
+    <xs:element name="RootToBeSubstituted" /><!-- which is inherently of type="xs:anyType" -->
+    <xs:element name="RootObjectType" type="RootObjectTypeSchemaType" /><!-- substitutionGroup="RootToBeSubstituted"   -->
+    
 	<xs:element name="Array" type="ArraySchemaType"/>
 	<xs:element name="ArrayAccess" type="ArrayAccessSchemaType"/>
 	<xs:element name="String" type="StringSchemaType"/>
