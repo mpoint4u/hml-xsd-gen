@@ -30,6 +30,6 @@ class RootObjectType extends SchemaType {
     }
 
     override public function toElementXmlString(namespace:SchemaNamespace): String {
-        return "";
+        return '<xs:element name="RootObjectType" type="RootObjectTypeSchemaType" />';
     }
 }
