@@ -18,7 +18,7 @@ class RootObjectType extends SchemaType {
     override public function toComplexTypeXmlString(namespace:SchemaNamespace): String {
         trace("called toComplexTypeXmlString() with namespace:" + namespace.name);
         var buf: StringBuf = new StringBuf();
-        buf.add('<xs:complexType name="RootObjectTypeSchemaType">');
+        buf.add('<xs:complexType name="RootObjectTypeSchemaType">\n');
         if (!Generator.onlyExplicitChildren) {
             buf.add('<xs:choice>\n');
             buf.add('<xs:any namespace="##targetNamespace" processContents="lax"  minOccurs="1"/>\n');
@@ -30,6 +30,6 @@ class RootObjectType extends SchemaType {
     }
 
     override public function toElementXmlString(namespace:SchemaNamespace): String {
-        return '<xs:element name="RootObjectType" type="RootObjectTypeSchemaType" />';
+        return '<xs:element name="RootObjectType" type="RootObjectTypeSchemaType" />\n';
     }
 }
