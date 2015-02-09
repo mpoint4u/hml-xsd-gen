@@ -1,0 +1,21 @@
+<xs:schema targetNamespace="haxe.io" xmlns="haxe.io" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:empty="empty"
+>
+<xs:import namespace="empty" schemaLocation="empty.xsd" />
+<xs:complexType name="BytesSchemaTypeValue">
+<xs:sequence><xs:element ref="Bytes"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="BytesSchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+<xs:element name="length" type="xs:int"/>
+</xs:sequence>
+<xs:attribute name="length" type="xs:int"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+
+<xs:element name="Bytes" type="BytesSchemaType"/>
+</xs:schema>

@@ -1,0 +1,32 @@
+<xs:schema targetNamespace="openfl._Vector" xmlns="openfl._Vector" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:empty="empty"
+>
+<xs:import namespace="empty" schemaLocation="empty.xsd" />
+<xs:complexType name="Vector_Impl_SchemaTypeValue">
+<xs:sequence><xs:element ref="Vector_Impl_"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="VectorDataIteratorSchemaTypeValue">
+<xs:sequence><xs:element ref="VectorDataIterator"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="Vector_Impl_SchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="VectorDataIteratorSchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+
+<xs:element name="Vector_Impl_" type="Vector_Impl_SchemaType"/>
+<xs:element name="VectorDataIterator" type="VectorDataIteratorSchemaType"/>
+</xs:schema>

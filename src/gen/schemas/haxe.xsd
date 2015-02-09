@@ -1,0 +1,71 @@
+<xs:schema targetNamespace="haxe" xmlns="haxe" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:empty="empty"
+>
+<xs:import namespace="empty" schemaLocation="empty.xsd" />
+<xs:complexType name="EnumValueToolsSchemaTypeValue">
+<xs:sequence><xs:element ref="EnumValueTools"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="TimerSchemaTypeValue">
+<xs:sequence><xs:element ref="Timer"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="EnumToolsSchemaTypeValue">
+<xs:sequence><xs:element ref="EnumTools"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="UnserializerSchemaTypeValue">
+<xs:sequence><xs:element ref="Unserializer"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="LogSchemaTypeValue">
+<xs:sequence><xs:element ref="Log"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="EnumValueToolsSchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="TimerSchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="EnumToolsSchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="UnserializerSchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="LogSchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+
+<xs:element name="EnumValueTools" type="EnumValueToolsSchemaType"/>
+<xs:element name="Timer" type="TimerSchemaType"/>
+<xs:element name="EnumTools" type="EnumToolsSchemaType"/>
+<xs:element name="Unserializer" type="UnserializerSchemaType"/>
+<xs:element name="Log" type="LogSchemaType"/>
+</xs:schema>

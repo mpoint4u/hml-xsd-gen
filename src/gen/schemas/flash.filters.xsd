@@ -1,0 +1,52 @@
+<xs:schema targetNamespace="flash.filters" xmlns="flash.filters" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:empty="empty"
+>
+<xs:import namespace="empty" schemaLocation="empty.xsd" />
+<xs:complexType name="GlowFilterSchemaTypeValue">
+<xs:sequence><xs:element ref="GlowFilter"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="BitmapFilterSchemaTypeValue">
+<xs:choice>
+<xs:element ref="GlowFilter" />
+<xs:element ref="BitmapFilter" />
+</xs:choice>
+</xs:complexType>
+
+<xs:complexType name="GlowFilterSchemaType">
+<xs:complexContent>
+<xs:extension base="BitmapFilterSchemaType">
+<xs:sequence>
+<xs:element name="alpha" type="xs:double"/>
+<xs:element name="blurX" type="xs:double"/>
+<xs:element name="blurY" type="xs:double"/>
+<xs:element name="color" type="xs:string"/>
+<xs:element name="inner" type="xs:boolean"/>
+<xs:element name="knockout" type="xs:boolean"/>
+<xs:element name="quality" type="xs:int"/>
+<xs:element name="strength" type="xs:double"/>
+</xs:sequence>
+<xs:attribute name="alpha" type="xs:double"/>
+<xs:attribute name="blurX" type="xs:double"/>
+<xs:attribute name="blurY" type="xs:double"/>
+<xs:attribute name="color" type="xs:string"/>
+<xs:attribute name="inner" type="xs:boolean"/>
+<xs:attribute name="knockout" type="xs:boolean"/>
+<xs:attribute name="quality" type="xs:int"/>
+<xs:attribute name="strength" type="xs:double"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="BitmapFilterSchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+
+<xs:element name="GlowFilter" type="GlowFilterSchemaType"/>
+<xs:element name="BitmapFilter" type="BitmapFilterSchemaType"/>
+</xs:schema>

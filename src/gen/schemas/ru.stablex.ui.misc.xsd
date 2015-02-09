@@ -1,0 +1,19 @@
+<xs:schema targetNamespace="ru.stablex.ui.misc" xmlns="ru.stablex.ui.misc" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:empty="empty"
+>
+<xs:import namespace="empty" schemaLocation="empty.xsd" />
+<xs:complexType name="SizeToolsSchemaTypeValue">
+<xs:sequence><xs:element ref="SizeTools"/></xs:sequence></xs:complexType>
+
+<xs:complexType name="SizeToolsSchemaType">
+<xs:complexContent>
+<xs:extension base="empty:RootObjectTypeSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+
+<xs:element name="SizeTools" type="SizeToolsSchemaType"/>
+</xs:schema>
