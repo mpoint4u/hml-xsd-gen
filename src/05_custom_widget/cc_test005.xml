@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Widget xmlns="ru.stablex.ui.widgets"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="ru.stablex.ui.widgets ../ru.stablex.ui.widgets.xsd"
+                >
+
+	<Widget name="testWid" />
+
+    
+</Widget>
+
+
