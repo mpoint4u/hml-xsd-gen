@@ -8,7 +8,7 @@ src/*/build/flash/bin/*.swf
 src/stablex_xml_example/schemas/tmp*.xsd
 *.lxsproj
 *.lxsopt
-*.bat
+
 *.sad
 *.spp
 *.xpr
