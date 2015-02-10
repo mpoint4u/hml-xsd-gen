@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Widget xmlns="ru.stablex.ui.widgets">
+<Widget>
 	<VBox>
-		<HBox childPadding="10">
+		<HBox childPadding="10" padding="15">
 			<ColorWidget id="'custom'" w="200" h="100" color="0x0000FF"/>
 			<Button text="'set random color'" skin:Paint-color="0x999999" on-click="
 				#ColorWidget(custom).color = Std.random(0xFFFFFF);
     	    	#custom.refresh();
 			"/>
 		</HBox>
-		<HBox childPadding="10" >
-			<Button name="'firstBtn'" align="'middle'" w="200" h="100" top="150" left="250"/>
-			<Button name="'secndBtn'" align="'middle'" w="200" h="100" top="250" left="250"/>
-			<Button name="'thirdBtn'" align="'middle'" w="200" h="100" top="350" left="250"/>
+		<HBox childPadding="10" padding="15">
+			<VBox childPadding="10">
+				<ColorWidget id="'custom2'" w="200" h="100" color="0xFF00FF"/>
+				<Button text="'set random color'" skin:Paint-color="0x999999" on-click="
+					#ColorWidget(custom2).color = Std.random(0xFFFFFF);
+    	    		#custom2.refresh();
+    	    		"/>
+			</VBox>
+			<VBox childPadding="10">
+				<ColorWidget id="'custom3'" w="200" h="100" color="0x00FFFF"/>
+				<Button text="'set random color'" skin:Paint-color="0x999999" on-click="
+					#ColorWidget(custom3).color = Std.random(0xFFFFFF);
+    	    		#custom3.refresh();
+    	    		"/>
+			</VBox>
 		</HBox>
 	</VBox>
 </Widget>

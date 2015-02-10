@@ -11209,4 +11209,9 @@
 		<haxe_doc><![CDATA[* Basic tooltip. To create tooltip for widget, use following xml snippet:
 * &lt;Widget tip:Tip-text="'My cool tool-tip'" /&gt;]]></haxe_doc>
 	</class>
+	<class path="ru.stablex.ui.widgets.VBox" params="" file="C:\HaxeToolkit\haxe\lib\stablexui/git/src/ru/stablex/ui/widgets/VBox.hx">
+		<extends path="ru.stablex.ui.widgets.Box"/>
+		<new public="1" set="method" line="6"><f a=""><x path="Void"/></f></new>
+		<haxe_doc>* Vertical box. It's a box with this.vertical = true by default</haxe_doc>
+	</class>
 </haxe>
