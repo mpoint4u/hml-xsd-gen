@@ -37,6 +37,7 @@ xmlns:empty="empty"
 
 <xs:complexType name="WidgetSchemaTypeValue">
 <xs:choice>
+<xs:element ref="VBox" />
 <xs:element ref="Bmp" />
 <xs:element ref="Text" />
 <xs:element ref="Button" />
@@ -49,11 +50,15 @@ xmlns:empty="empty"
 </xs:choice>
 </xs:complexType>
 
+<xs:complexType name="VBoxSchemaTypeValue">
+<xs:sequence><xs:element ref="VBox"/></xs:sequence></xs:complexType>
+
 <xs:complexType name="BmpSchemaTypeValue">
 <xs:sequence><xs:element ref="Bmp"/></xs:sequence></xs:complexType>
 
 <xs:complexType name="BoxSchemaTypeValue">
 <xs:choice>
+<xs:element ref="VBox" />
 <xs:element ref="Text" />
 <xs:element ref="Button" />
 <xs:element ref="HBox" />
@@ -239,6 +244,15 @@ xmlns:empty="empty"
 </xs:complexContent>
 </xs:complexType>
 
+<xs:complexType name="VBoxSchemaType">
+<xs:complexContent>
+<xs:extension base="BoxSchemaType">
+<xs:sequence>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
 <xs:complexType name="BmpSchemaType">
 <xs:complexContent>
 <xs:extension base="WidgetSchemaType">
@@ -314,6 +328,7 @@ xmlns:empty="empty"
 <xs:element name="Floating" type="FloatingSchemaType"/>
 <xs:element name="Tip" type="TipSchemaType"/>
 <xs:element name="Widget" type="WidgetSchemaType"/>
+<xs:element name="VBox" type="VBoxSchemaType"/>
 <xs:element name="Bmp" type="BmpSchemaType"/>
 <xs:element name="Box" type="BoxSchemaType"/>
 </xs:schema>

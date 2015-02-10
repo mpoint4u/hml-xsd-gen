@@ -312,6 +312,7 @@ xmlns:flash-accessibility="flash.accessibility"
 <xs:element ref="flash-media:AVStream" />
 <xs:element ref="motion-actuators:TransformActuator" />
 <xs:element ref="flash-utils:IDataInput" />
+<xs:element ref="ru-stablex-ui-widgets:VBox" />
 <xs:element ref="flash-errors:Error" />
 <xs:element ref="ru-stablex-ui-widgets:Bmp" />
 <xs:element ref="flash-display:ShaderData" />

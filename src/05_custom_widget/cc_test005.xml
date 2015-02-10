@@ -5,14 +5,18 @@
                 >
 
 	<HBox name="myHorizontalBox" padding="15" childPadding="20">
-		<Text name="myText" text="'some text'" align="'left'" />
-		<Text name="myText" text="'some text'" align="'left'" />
-		<Text name="myText" text="'some text'" align="'left'" />
-		<Text name="myText" text="'some text'" align="'left'" />
-		<Text name="myText" text="'some text'" align="'left'" />
-		<Text name="myText" text="'some text'" align="'left'" />
-	</HBox>
+		<VBox childPadding="10" padding="20">
+			<Text name="myText" text="'some text'" align="'left'" />
+			<Text name="myText" text="'some text'" align="'left'" />
+			<Text name="myText" text="'some text'" align="'left'" />
+		</VBox>
 
+		<VBox childPadding="10" padding="20">
+			<Text name="myText" text="'some text'" align="'left'" />
+			<Text name="myText" text="'some text'" align="'left'" />
+			<Text name="myText" text="'some text'" align="'left'" />
+		</VBox>
+	</HBox>
 	
 </Widget>
 

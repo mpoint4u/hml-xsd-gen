@@ -8,6 +8,7 @@ xmlns:empty="empty"
 <xs:import namespace="empty" schemaLocation="empty.xsd" />
 <xs:complexType name="TweenSpriteSchemaTypeValue">
 <xs:choice>
+<xs:element ref="ru-stablex-ui-widgets:VBox" />
 <xs:element ref="ru-stablex-ui-widgets:Bmp" />
 <xs:element ref="ru-stablex-ui-widgets:Text" />
 <xs:element ref="ru-stablex-ui-widgets:Button" />
