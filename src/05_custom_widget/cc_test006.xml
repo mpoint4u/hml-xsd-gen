@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Widget xmlns="ru.stablex.ui.widgets"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="ru.stablex.ui.widgets ../gen/schemas/ru.stablex.ui.widgets.xsd">
+
+	<HBox name="container" childPadding="10">
+		<ColorWidget id="'custom'" w="200" h="100" color="0x0000FF"/>
+		<Button name="firstBtn" label="'i am a button'" align="'middle'"/>
+		<Button name="secndBtn" label="'i am a button'" align="'middle'"/>
+		<Button name="thirdBtn" label="'i am a button'" align="'middle'"/>
+
+	</HBox>
+
+</Widget>

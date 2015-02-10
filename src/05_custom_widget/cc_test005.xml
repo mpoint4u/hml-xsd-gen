@@ -5,12 +5,12 @@
                 >
 
 	<HBox name="myHorizontalBox" padding="15" childPadding="20">
-		<Text name="myText" text="'some text'" align="left" />
-		<Text name="myText" text="'some text'" align="left" />
-		<Text name="myText" text="'some text'" align="left" />
-		<Text name="myText" text="'some text'" align="left" />
-		<Text name="myText" text="'some text'" align="left" />
-		<Text name="myText" text="'some text'" align="left" />
+		<Text name="myText" text="'some text'" align="'left'" />
+		<Text name="myText" text="'some text'" align="'left'" />
+		<Text name="myText" text="'some text'" align="'left'" />
+		<Text name="myText" text="'some text'" align="'left'" />
+		<Text name="myText" text="'some text'" align="'left'" />
+		<Text name="myText" text="'some text'" align="'left'" />
 	</HBox>
 
 	
