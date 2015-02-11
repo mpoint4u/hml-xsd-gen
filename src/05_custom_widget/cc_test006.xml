@@ -24,6 +24,12 @@
     	    		"/>
 			</VBox>
 		</HBox>
+		<VBox childPadding="20">
+			<Text text="'and I wanted to'" />
+			<Text text="'add, that I am quite'" />
+			<Text text="'pleased with how it is'" />
+			<Text text="'proceeding............'" />
+		</VBox>
 	</VBox>
 </Widget>
 
