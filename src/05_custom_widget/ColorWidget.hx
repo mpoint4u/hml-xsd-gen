@@ -28,6 +28,7 @@ class ColorWidget extends ru.stablex.ui.widgets.Widget{
     * For this widget we want to update background color on refresh.
     */
     override public function refresh () : Void {
+        trace("called resfresh() in ColorWidget class ... ");
         super.refresh();
         this._paintBackground();
     }//function refresh()
