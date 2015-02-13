@@ -12,6 +12,6 @@
     <haxelib name="actuate" />
 	<haxelib name="stablexui" />
 
-	<haxeflag name="-xml" value="../gen/codestructure.xml" />
+	<!--<haxeflag name="-xml" value="../gen/codestructure.xml" />-->
 
 </project>
