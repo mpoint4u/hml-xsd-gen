@@ -6,13 +6,13 @@
 
     <window width="800" height="600" background="0xFFFFFF" fps="60"/>
 
-    <source name="../../src/" />
+    <source name="../../../StablexUI/src/" />
 
     <assets path="assets" include="*" />
 
     <haxelib name="openfl" />
     <haxelib name="actuate" />
 
-
+	<!--<haxeflag name="-xml" value="../gen/codestructure.xml" />-->
 
 </project>
