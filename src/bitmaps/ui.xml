@@ -6,7 +6,7 @@
 	<VBox w="$Lib.current.stage.stageWidth" h="$Lib.current.stage.stageHeight">
 
 		<!-- without stretching -->
-		<HBox skin:Paint-color="0x555555" padding="50" childPadding="30" widthPt="100">
+		<HBox skin:Paint-color="0x55aa55" padding="50" childPadding="30" widthPt="80">
 
 			<!-- full image -->
 			<Bmp src="'assets/haxe.png'"/>
@@ -26,7 +26,7 @@
 			<Bmp src="'assets/haxe.png'" w="100" h="100" stretch="true" keepAspect="true"/>
 		</HBox>
 
-		<HBox skin:Paint-color="0x555555" padding="50" childPadding="30" widthPt="100">
+		<HBox skin:Paint-color="0x55cc55" padding="50" childPadding="30" widthPt="80">
 			<Bmp src="'assets/haxe.png'" w="100" h="100" stretch="true" />
 
 			<Bmp src="'assets/haxe.png'" w="100" h="100" stretch="true" keepAspect="true" />
