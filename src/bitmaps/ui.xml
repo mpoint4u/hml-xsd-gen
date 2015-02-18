@@ -5,7 +5,19 @@
 
 	<VBox w="$Lib.current.stage.stageWidth" h="$Lib.current.stage.stageHeight">
 
-		<!-- without stretching -->
+		<!-- @todo ... check out: skin:attributes
+			  how they could be
+
+		 		a) either shown by code completion (XSD and/or haxeCompiler)		or
+
+		 		b) transferred into a CSS like 'default' - file, so they only have to be defined once and
+		 		 	could be reused (when needed)									or
+
+				c) ordered into the right spot inside the whole XML / class hierarchy and
+					properly reflected in that setting ...
+
+				?!? -->
+		
 		<HBox skin:Paint-color="0x55aa55" padding="50" childPadding="30" widthPt="80">
 
 			<!-- full image -->
