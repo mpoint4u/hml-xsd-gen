@@ -2,15 +2,11 @@
 *.iws
 *.iml
 *.ipr
-src/*/bin/.build_date
-src/*/bin/flash/bin/*
-src/*/bin/flash/haxe/*
-src/*/build/flash/haxe/*
-src/*/build/flash/bin/*.swf
+src/*/bin/*
+src/*/build/*
 src/stablex_xml_example/schemas/tmp*.xsd
 *.lxsproj
 *.lxsopt
-
 *.sad
 *.spp
 *.xpr
