@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Widget>
+<Widget xmlns="ru.stablex.ui.widgets"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="ru.stablex.ui.widgets ../gen/schemas/ru.stablex.ui.widgets.xsd">
 
 	<HBox padding="15" childPadding="20">
 		<VBox childPadding="10" padding="20">

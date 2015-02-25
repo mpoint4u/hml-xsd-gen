@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Widget>
+<Widget xmlns="ru.stablex.ui.widgets"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="ru.stablex.ui.widgets ../gen/schemas/ru.stablex.ui.widgets.xsd">
 	<VBox>
 		<HBox childPadding="10" padding="15">
 			<ColorWidget id="'custom'" w="200" h="100" color="0x0000FF"/>
@@ -24,6 +26,13 @@
     	    		"/>
 			</VBox>
 		</HBox>
+		<VBox childPadding="20">
+			<Text text="'and I wanted to'" />
+			<Text text="'add, that I am quite'" />
+			<Text text="'pleased with how it is'" />
+			<Text text="'proceeding............'" />
+			<Text text="'so far... '" />
+		</VBox>
 	</VBox>
 </Widget>
 
